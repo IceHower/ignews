@@ -1,0 +1,44 @@
+:root {
+    --cyan-500: #61DCFB;
+    --yellow-500: #EBA417;
+    --gray-100: #E1E1E6;
+    --gray-300: #a8a8b3;
+    --gray-900: #121414;
+    --white: #FFFFFF;
+    --shape: #1F2729;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gray-900);
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, select, button {
+    font: 400 1rem "Roboto", sans-serif;
+}
+
+a {
+    color: inherit; // Herda as cores dos elementos pai
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    @media (max-width: 1080px) {
+        font-size: 93.75% // 15px
+    }
+    @media (max-width: 720px) {
+        font-size: 87.5% // 14px
+    }
+}
