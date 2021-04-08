@@ -19,7 +19,6 @@ export default function Home({product} : HomeProps) {
       <Head>
         <title>Home | ig.news</title>
       </Head>
-      <AppBar />
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
           <span>Hey, Welcome</span>
