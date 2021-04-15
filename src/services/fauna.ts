@@ -1,5 +1,10 @@
 import { Client } from 'faunadb';
 
+//Com esse simples codigo, ja estamos conectado ao fauna db
+//OBS: TODAS AS OPERACOES QUE SAO CONSULTAS DIRETAMENTE AO BANCO DE DADOS
+//  NAO PODEM SER FEITAS DIRETAMENTE NO COMPONENTE UTILIZANDO UM USEEFFECT 
+//  OU ALGO DO TIPO
+//  SO PODEM SER FEITAS ATRAVES DA PASTA API OU DO METODO GETSTATICPROPS, GETSERVERSIDEPROPS
 export const fauna = new Client({
     secret: process.env.FAUNADB_KEY
 });
