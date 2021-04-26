@@ -1,7 +1,6 @@
 import styles from '../styles/components/signinbutton.module.scss';
 import { FaGithub } from 'react-icons/fa';
 import { FiX } from 'react-icons/fi';
-import { useState } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/client';
 
 
