@@ -1,14 +1,22 @@
 import styles from '../styles/components/appbar.module.scss';
 import { SingInButton } from './SingInButton';
 
+import { ActiveLink } from './ActiveLink';
+
 export function AppBar() {
+
+
     return (
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
                 <img src="/assets/logo.svg" alt="Logo ignews"/>
                 <nav>
-                    <a className={styles.active} href="#">Home</a>
-                    <a href="/posts">Posts</a>
+                    <ActiveLink activeClassName={styles.active} href='/'>
+                        <a>Home</a>
+                    </ActiveLink>
+                    <ActiveLink activeClassName={styles.active} href='/posts'>
+                        <a>Posts</a>
+                    </ActiveLink>
                 </nav>
 
                 <SingInButton />
