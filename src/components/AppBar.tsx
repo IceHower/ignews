@@ -8,7 +8,7 @@ export function AppBar() {
                 <img src="/assets/logo.svg" alt="Logo ignews"/>
                 <nav>
                     <a className={styles.active} href="#">Home</a>
-                    <a href="#">Posts</a>
+                    <a href="/posts">Posts</a>
                 </nav>
 
                 <SingInButton />
